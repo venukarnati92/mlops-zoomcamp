@@ -10,7 +10,6 @@ COPY batch.py /app/batch.py
 
 #execute the batch.py file with arguments year and month
 ENTRYPOINT ["python", "/app/batch.py"]
-CMD ["2023", "10"]
 # Example usage:
 # docker build -t batch-job .
-# docker run --rm batch-job 2023 10
+# docker run --rm batch-job --year 2023 --month 5
